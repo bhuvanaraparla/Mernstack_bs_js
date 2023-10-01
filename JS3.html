@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript3</title>
+    <link rel="icon" href="three.png">
+    <script>
+        function multiply() {
+            var input1 = Number(document.myform.num1.value);
+            var input2 = Number(document.myform.num2.value);
+            var r= input1 * input2;
+            document.getElementById("result").innerHTML = r;
+
+        }
+        function divide() {
+            var input1 = Number(document.myform.num1.value);
+            var input2 = Number(document.myform.num2.value);
+            var r = input1 / input2;
+            document.getElementById("result").innerHTML = r;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <table><tr><td>First Number:</td> <td><input type="text" name="num1"></td></tr> 
+            <tr><td> `</td><td></td></tr>
+            <tr><td>Second Number:</td> <td><input type="text" name="num2"></td></tr>
+            <tr><td><input type="button" value="Multiply" onclick="multiply()" ></td>
+                <td><input type="button" value="Divide" onclick="divide()" > </td>
+            </tr>
+        </table>
+            <br>
+    </form>
+    <p>The Result is:</p>
+    <p id="result"></p>
+</body>
+</html>

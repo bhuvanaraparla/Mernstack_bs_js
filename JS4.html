@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript4</title>
+    <link rel="icon" href="four.png">
+    <script>
+        function date() {
+            const displayArea = document.getElementById("displayArea");
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString();
+            result1.textContent = "Current Date: " + formattedDate;
+        }
+
+        function Time() {
+            const displayArea = document.getElementById("displayArea");
+            const currentTime = new Date();
+            const formattedTime = currentTime.toLocaleTimeString();
+            result2.textContent = "Current Time: " + formattedTime+" GMT:+5:30(Indian Standard Time)";
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <input type="button" value="show date" onclick="date()">
+        <p id="result1"></p><br>
+        <input type="button" value="show Time" onclick="Time()">
+        <p id="result2"></p><br>
+
+    </form>
+</body>
+</html>
